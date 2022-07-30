@@ -3,7 +3,7 @@ A Code that allows you to get the "Streaming" Discord Status WITHOUT Streaming!
 
 ----
 
-The [index.js](https://github.com/SealedSaucer/Fake-Streamer/blob/main/index.js) is the main file. [server.js](https://github.com/SealedSaucer/Fake-Streamer/blob/main/server.js) prevents your repl from going to sleep. (If you have a replit hacker plan, then you can delete [this file](https://github.com/SealedSaucer/Fake-Streamer/blob/main/server.js) and paste this code inside the [index.js](https://github.com/SealedSaucer/Fake-Streamer/blob/main/index.js) file : 
+The [index.js](https://github.com/DemasXI/dc-stream-faker/blob/main/index.js) is the main file. [server.js](https://github.com/DemasXI/dc-stream-faker/blob/main/server.js) prevents your repl from going to sleep. (If you have a replit hacker plan, then you can delete [this file](https://github.com/DemasXI/dc-stream-faker/blob/main/server.js) and paste this code inside the [index.js] (https://github.com/DemasXI/dc-stream-faker/blob/main/index.js) file : 
 
 </br>
 
@@ -21,13 +21,13 @@ client.on("ready", () => {
     rpcGenerator.getRpcImage("CLIENT_ID", "IMAGE_NAME")
     .then(image => {
         let presence = new rpcGenerator.Rpc()
-        .setName("twitch")
-        .setUrl("https://twitch.tv/SealedSaucer")
-        .setType("STREAMING")
+        .setName("DEEMASXI")
+        .setUrl("https://m.youtube.com/c/DeemasXI")
+        .setType("LISTENING")
         .setApplicationId("CLIENT_ID")
         .setAssetsLargeImage(image.id)
-        .setAssetsLargeText("youtube.com/SealedSaucer")
-        .setDetails("Subscribe!")
+        .setAssetsLargeText("youtube.com/c/DeemasXI")
+        .setDetails("SUBSCRIBE!")
  
         client.user.setPresence(presence.toDiscord())
     }).catch(console.error)
@@ -35,7 +35,7 @@ client.on("ready", () => {
 })
 ```
 
-This Code is from [this tutorial](https://youtu.be/yl0SdXT-4Tk). If you have any doubts regarding this, feel free to [contact me](https://dsc.gg/phantom).
+This Code is from [DEEMASXI](https://m.youtube.com/c/DeemasXI). If you have any doubts regarding this, feel free to [contact me](https://contact-1.demasxi.repl.co/).
 
 **DO NOT GIVE YOUR TOKEN TO OTHERS!**
 
@@ -47,4 +47,4 @@ Use [uptimerobot.com](https://uptimerobot.com) to make your repl online 24/7.
 
 ----
 
-> Fake Streamer © 2021 by SealedSaucer is licensed under Attribution 4.0 International 
+> Dc Stream Faker © 2023 by Deemasxi is licensed under Attribution 4.0 International 
