@@ -13,12 +13,12 @@ client.on("ready", () => {
     rpcGenerator.getRpcImage("CLIENT_ID", "IMAGE_NAME")
     .then(image => {
         let presence = new rpcGenerator.Rpc()
-        .setName("twitch")
-        .setUrl("https://twitch.tv/SealedSaucer")
-        .setType("STREAMING")
+        .setName("YouTube")
+        .setUrl("https://youtube.com/c/DeemasXI")
+        .setType("WATCHING")
         .setApplicationId("CLIENT_ID")
         .setAssetsLargeImage(image.id)
-        .setAssetsLargeText("youtube.com/SealedSaucer")
+        .setAssetsLargeText("youtube.com/c/DeemasXI")
         .setDetails("Subscribe!")
  
         client.user.setPresence(presence.toDiscord())
