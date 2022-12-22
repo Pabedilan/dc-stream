@@ -10,15 +10,15 @@ keepAlive()
 client.login(TOKEN)
  
 client.on("ready", () => {
-    rpcGenerator.getRpcImage("CLIENT_ID", "IMAGE_NAME")
+    rpcGenerator.getRpcImage("1050196202454515802", "20221128_122307")
     .then(image => {
         let presence = new rpcGenerator.Rpc()
         .setName("YouTube")
         .setUrl("https://youtube.com/c/DeemasXI")
         .setType("WATCHING")
-        .setApplicationId("CLIENT_ID")
+        .setApplicationId("1050196202454515802")
         .setAssetsLargeImage(image.id)
-        .setAssetsLargeText("youtube.com/c/DeemasXI")
+        .setAssetsLargeText("youtube.com/@thedemonofficial")
         .setDetails("Subscribe!")
  
         client.user.setPresence(presence.toDiscord())
